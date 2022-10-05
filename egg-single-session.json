@@ -143,8 +143,8 @@
             "description": "seconds (21600 is 6 hours)",
             "env_variable": "IDLE_RESTART_INTERVAL",
             "default_value": "21600",
-            "user_viewable": false,
-            "user_editable": false,
+            "user_viewable": true,
+            "user_editable": true,
             "rules": "integer|max:604800",
             "field_type": "text"
         },
@@ -153,8 +153,8 @@
             "description": "",
             "env_variable": "ROLE_CLOUD_VARIABLE",
             "default_value": "",
-            "user_viewable": false,
-            "user_editable": false,
+            "user_viewable": true,
+            "user_editable": true,
             "rules": "string|max:100|nullable",
             "field_type": "text"
         },
@@ -163,8 +163,28 @@
             "description": "",
             "env_variable": "ALLOW_USER_CLOUD_VARIABLE",
             "default_value": "",
-            "user_viewable": false,
-            "user_editable": false,
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Required user to join cloud variable",
+            "description": "",
+            "env_variable": "REQUIRED_USER_JOIN_CLOUD_VARIABLE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "string|max:100|nullable",
+            "field_type": "text"
+        },
+        {
+            "name": "Required user deny message",
+            "description": "",
+            "env_variable": "REQUIRED_USER_DENY_MESSAGE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
             "rules": "string|max:100|nullable",
             "field_type": "text"
         },
